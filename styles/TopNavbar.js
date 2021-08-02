@@ -20,18 +20,19 @@ export const topNavbarStyles = makeStyles((theme) => ({
     width: "100%",
   },
   navItemsContainer: {
+    padding: 0,
     "& .MuiButton-root:hover": {
       backgroundColor: "transparent",
     },
     "& .MuiButton-text": {
       paddingRight: "2.25rem",
     },
-    "& [class*='makeStyles-blackButton']": {
+    "& > :nth-child(5)": {
       backgroundColor: "#021221",
       borderRadius: "8px",
       padding: "0.75rem",
     },
-    "& [class*='makeStyles-blackButton']:hover": {
+    "& > :nth-child(5):hover": {
       backgroundColor: "#021221",
     },
   },
