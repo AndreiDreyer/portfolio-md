@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import { topNavbarStyles } from "../styles/TopNavbar";
 
 import MenuItem from "./MenuItem";
@@ -10,7 +12,7 @@ export default function TopNavbar(props) {
     <div className={topNavStyles.navContainer}>
       <div className={topNavStyles.innerNavContainer}>
         <div className={topNavStyles.logoContainer}>
-          <img className={topNavStyles.logoImg} src="logo.svg" />
+          <Image className={topNavStyles.logoImg} src="/logo.svg" width={59} height={28} />
         </div>
         <div className={topNavStyles.navItemsContainer}>
           <MenuItem menuItemName="home" route="/" />

@@ -2,7 +2,6 @@ import { makeStyles } from "@material-ui/core/styles";
 
 export const menuItemStyles = makeStyles((theme) => ({
   menuItem: {
-    paddingRight: "2.25rem",
     "& .MuiButton-label": {
       fontSize: "1rem",
       fontWeight: "normal",

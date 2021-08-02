@@ -23,6 +23,9 @@ export const topNavbarStyles = makeStyles((theme) => ({
     "& .MuiButton-root:hover": {
       backgroundColor: "transparent",
     },
+    "& .MuiButton-text": {
+      paddingRight: "2.25rem",
+    },
     "& [class*='makeStyles-blackButton']": {
       backgroundColor: "#021221",
       borderRadius: "8px",
