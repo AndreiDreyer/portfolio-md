@@ -5,10 +5,7 @@ export const topNavbarStyles = makeStyles((theme) => ({
     width: "100vw",
   },
   innerNavContainer: {
-    paddingLeft: "7.5rem",
-    paddingRight: "7.5rem",
-    paddingTop: "0.75rem",
-    paddingBottom: "0.75rem",
+    padding: "1.125rem 7.5rem",
     display: "flex",
     justifyContent: "space-between",
   },
