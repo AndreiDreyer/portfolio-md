@@ -12,6 +12,9 @@ export const buttonStyles = makeStyles((theme) => ({
       borderRadius: "0.75rem",
       boxShadow: "0px 4px 8px rgba(129, 129, 129, 0.16)",
     },
+    "& .MuiButton-text": {
+      padding: 0,
+    },
   },
   iconButton: {
     "& .MuiButton-label": {
