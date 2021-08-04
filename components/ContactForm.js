@@ -1,11 +1,14 @@
+import Image from "next/image";
+
 import { contactFormStyles } from "../styles/ContactForm";
-import CustomButton from "../components/CustomButton";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 
 import clsx from "clsx";
 
 import TextField from "@material-ui/core/TextField";
+import Button from "@material-ui/core/Button";
+
 import { withStyles } from "@material-ui/core";
 
 const CssTextField = withStyles({
@@ -120,7 +123,14 @@ export default function ContactForm() {
           />
         </div>
         <div className={formStyles.submitButtonContainer}>
-          <CustomButton buttonText="send" iconPath="arrow_right_icon.svg" />
+          <div className={formStyles.buttonContainer}>
+            <Button className={formStyles.iconButton}>
+              Send
+              <div className={formStyles.iconContainer}>
+                <Image src="/arrow_right_icon.svg" width={24} height={24} />
+              </div>
+            </Button>
+          </div>
         </div>
       </form>
     </div>
